@@ -10,28 +10,28 @@
 
 			<div class="input-group">
 				<span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
-				<%= f.text_field :name, class: "form-control", placeholder: "Name...", id: "name" %>
+				<%= f.text_field :name, class: "form-control", placeholder: "Name" %>
 			</div>
 
 			<div class="input-group">
 				<span class="input-group-addon">@</span>
-				<%= f.text_field :username, class: "form-control", placeholder: "Username..." %>
+				<%= f.text_field :username, class: "form-control Username", placeholder: "Username" %>
 			</div>
 
 			<div class="input-group">
 				<span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span></span>
-				<%= f.text_field :email, class: "form-control", placeholder: "Email..." %>
+				<%= f.text_field :email, class: "form-control", placeholder: "Email" %>
 			</div>
 
 			<div class="input-group">
 				<span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
-				<%= f.password_field :password, class: "form-control", placeholder: "Password..." %>
+				<%= f.password_field :password, class: "form-control", placeholder: "Password" %>
 			</div>
 
 
 			<div class="input-group">
 				<span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
-				<%= f.password_field :password_confirmation, class: "form-control", placeholder: "Confirmation..." %>
+				<%= f.password_field :password_confirmation, class: "form-control", placeholder: "Confirmation" %>
 			</div>
 
 			<%= f.submit "Create my account", class: "btn btn-large btn-primary" %>
