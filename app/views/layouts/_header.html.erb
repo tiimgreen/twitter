@@ -29,12 +29,21 @@
 							</a>
 						</li>
 						<li>
-							<a href="<%= '#' %>">
+							<a href="<%= edit_user_path(current_user) %>">
 								<span class="glyphicon glyphicon-cog"></span> Settings
 							</a>
 						</li>
+						<li>
+							<a href="<%= users_path %>">
+								<span class="glyphicon glyphicon-user"></span> Users
+							</a>
+						</li>
 						<li class="divider"></li>
-						<li><%= link_to "Sign Out", signout_path, method: "delete" %></li>
+						<li>
+							<a href="<%= signout_path %>" data-method="delete" rel="nofollow">
+								<span class="glyphicon glyphicon-remove"></span> Sign Out
+							</a>
+						</li>
 					</ul>
 				</li>
 			<% else %>
