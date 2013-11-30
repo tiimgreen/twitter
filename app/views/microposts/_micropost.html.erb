@@ -1,0 +1,11 @@
+<li id="<%= micropost.user.username %>-<%= micropost.id %>" class="post-micropost">
+	<div class="post-gravatar"><%= gravatar_for @user %></div>
+	<div class="post-name"><strong><%= link_to @user.name, @user %></strong></div>
+	<span class="post-username">@<%= @user.username %></span>
+	<span class="post-timestamp"><%= time_ago_in_words(micropost.created_at) %> ago</span>
+	<span class="post-content"><%= micropost.content %></span>
+	<% if current_user?(micropost.user) || (current_user && current_user.admin?) %>
+		<%= link_to "delete", micropost, method: :delete, data: { confirm: "You sure?" },
+                                     title: micropost.content, class: "post-delete" %>
+  <% end %>
+</li>

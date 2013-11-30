@@ -7,15 +7,35 @@
 .input-group {margin:10px 0;}
 
 /* Users */
-#error_explanation {color: #f00;
-  ul {margin: 0 0 18px 0;}
+#error-explanation {color: #f00;margin:25px 0;
+  ul {margin: 19px 0 18px 0;}
 }
-.field_with_errors {@extend .control-group;@extend .error;}
-.user-info, .user-gravatar {display:inline;}
-.user-info {}
 .edit-gravatar {margin-top:10px;}
 
 /* Index */
 .users {list-style: none;margin: 0;}
 .users li {overflow: auto;padding: 10px 0;border-bottom: 1px solid #C7C7C7;}
 .users li:last-child {border-bottom: none;}
+
+/* Microposts */
+.microposts {list-style: none;margin: 10px 0 0 0;}
+.microposts li {padding: 10px 0;border-top: 1px solid #e8e8e8;min-height:80px;}
+.microposts li:hover {cursor: pointer;background: #F7F7F7}
+.microposts li .post-gravatar img {margin-left:10px;}
+.microposts li .post-username {color:#8F8F8F;}
+.microposts li .post-name a {color:#333333;}
+.microposts li .post-username, .microposts li .post-name {display:inline;}
+.post-content {display: block;}
+.post-timestamp, .post-delete {color: #BDBDBD;float:right;margin-right:10px;}
+.gravatar {float: left;margin-right: 10px;}
+aside textarea {height: 100px;margin-bottom: 5px;}
+
+.letter-counter, .micropost-submit {float:right;}
+.letter-counter {margin:7px 10px 0 0;}
+.home-username, .home-post-count {display: inline}
+#txtComment {margin-top:20px;}
+.alert-danger {margin: 20px 0;}
+
+.post-delete:hover {text-decoration:none;}
+.post-delete {visibility:hidden;}
+.post-micropost:hover > .post-delete {visibility:visible;}

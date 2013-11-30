@@ -1,0 +1,4 @@
+<%= link_to gravatar_for(current_user, size: 52), current_user %>
+<h3 class="home-name"><%= link_to current_user.name, current_user %></h3>
+<h5 class="home-username">@<%= current_user.username %></h5>
+<span class="home-post-count"><span class="badge"><%= current_user.microposts.count %></span></span>
