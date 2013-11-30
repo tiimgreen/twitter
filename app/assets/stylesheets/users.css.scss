@@ -18,7 +18,7 @@
 .users li:last-child {border-bottom: none;}
 
 /* Microposts */
-.microposts {list-style: none;margin: 10px 0 0 0;}
+.microposts, .users {list-style: none;margin: 10px 0 0 -40px;}
 .microposts li {padding: 10px 0;border-top: 1px solid #e8e8e8;min-height:80px;}
 .microposts li:hover {cursor: pointer;background: #F7F7F7}
 .microposts li .post-gravatar img {margin-left:10px;}
@@ -28,7 +28,7 @@
 .post-content {display: block;}
 .post-timestamp, .post-delete {color: #BDBDBD;float:right;margin-right:10px;}
 .gravatar {float: left;margin-right: 10px;}
-aside textarea {height: 100px;margin-bottom: 5px;}
+aside textarea {height: 100px;margin: 10px 0;}
 
 .letter-counter, .micropost-submit {float:right;}
 .letter-counter {margin:7px 10px 0 0;}
@@ -39,3 +39,16 @@ aside textarea {height: 100px;margin-bottom: 5px;}
 .post-delete:hover {text-decoration:none;}
 .post-delete {visibility:hidden;}
 .post-micropost:hover > .post-delete {visibility:visible;}
+
+.user-info-panel {background:#EDEDED;border: 1px solid #CFCFCF;padding-bottom:15px;}
+.main-panel {background:#FCFCFC;border: 1px solid #CFCFCF;float:right;}
+.stats {padding:15px;overflow: auto;}
+.dropdown-toggle > img {margin-top:-5px;}
+
+.stats {clear:both;padding:10px;}
+.stats a {float: left;padding: 0 10px;border-left: 1px solid #707070;color: gray;}
+.stats a:first-child {padding-left: 0;border: 0;}
+.stats a:hover {text-decoration: none;color: blue;}
+
+.follow-button {float:right;margin-left:10px;}
+.follow-button.follow {margin-left:20px;}

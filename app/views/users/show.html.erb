@@ -6,9 +6,13 @@
       	<%= gravatar_for @user, circle: true %>
       </span>
       <span class="user-info">
+        <%= render 'follow_form' if signed_in? %>
 	      <h3><%= @user.name %></h3>
 	      <h5>@<%= @user.username %></h5>
 	     </span>
+    </section>
+    <section>
+      <%= render 'shared/stats' %>
     </section>
   </aside>
   <div class="col-md-8">
